@@ -1,4 +1,4 @@
-# Repro for lein-jmh issue
+# [Repro for lein-jmh issue](https://github.com/jgpc42/lein-jmh/issues/4)
 
 Seems like lein-jmh doesn't respect `:source-paths` in `project.clj`.
 `jmh.edn` runs with only source files from under `src` and works fine.
