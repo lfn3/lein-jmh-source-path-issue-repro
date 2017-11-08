@@ -1,0 +1,4 @@
+{:benchmarks [{:fn (fn [x y] (+ x y))
+               :args [:state/gen-fn :state/gen-fn]}]
+ :states {:gen-fn jmh-test.core/gen-fn}
+ :options {:jmh/default {:mode :single-shot}}}
