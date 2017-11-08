@@ -1,4 +1,4 @@
-{:benchmarks [{:fn (fn [x y] (+ x y))
+{:benchmarks [{:fn   (fn [a-record] (inc (jmh-test.core/get-s a-record)))
                :args [:state/gen-fn :state/gen-fn]}]
- :states {:gen-fn jmh-test-more-src.more-core/more-gen-fn}
- :options {:jmh/default {:mode :single-shot}}}
+ :states     {:gen-fn (fn [] (jmh-test.core/make-a-record 1))}
+ :options    {:jmh/default {:mode :single-shot}}}

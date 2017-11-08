@@ -5,8 +5,6 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.8.0"]]
 
-  :source-paths ["src" "more-src"]
-
   :plugins [[lein-jmh "0.2.2"]]
 
   :main ^:skip-aot jmh-test.core
